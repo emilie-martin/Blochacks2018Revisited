@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Revisited version of the CV Template Generator done for BlochacksF2018
+        Original: github.com/daniela-venuta/blochacks2018
+        
+        Authors: Minh-Tam Do, Émilie Martin, Kevin Sidhu, Daniela Venuta
+        Project: CV Template Generator
+                Goal: Facilitate the creation of a Curriculum Vitae (CV) for job applications.
+                    Targetted at the portion of the population less familiar with the process
+                            e.g.: students or immigrants
+        Last update: February 23rd 2019
+        Last modification: Defined basic coloring and font in CSS, fixed basic structuring
+    -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CV Generator</title>
+        <link rel="stylesheet" type="text/css" href="CV_revisited.css" />
+    </head>
+
+    <body>
+        <header>
+            <!--Menu-->
+            <ul id="navBar">
+                <li><a id="menu_home">Home</a></li>
+                <li><a id="menu_use">Why use this?</a></li>
+                <li><a id="menu_about">About us</a></li>
+                <li><a id="menu_fr">FR</a></li>
+            </ul>
+        </header>
+
+        <h1>CV Template Generator</h1>
+        <div id="overview">
+            <!--General introduction and aim of this website-->
+            <h2>Webpage overview</h2>
+                <p>This webpage was created as a way to facilitate the creation of a ciriculum vitae (CV) for job applications.
+                <br/>It targets anyone looking for a job, be it a student or a migrant unfamiliar with the employment process here in Montreal.</p>
+        </div>
+    
+        <div id=inputFields>
+            <!--Name and contact info-->
+            <fieldset id="nameAndContact">
+                <legend class="fieldsetTitle">Name and Contact Information</legend>
+                <p>Basic information that can be used to reach you within a reasonable amount of time</p>
+                First name: <br/>
+                    <input type="text" name="firstName"> <br/>
+                Last name: <br/>
+                    <input type="text" name="lastName"> <br/>
+                Phone number: <br>
+                    <input type="tel" name="phoneNumber">
+                    <label id="phoneType">
+                        <select name="phone">
+                            <option value="cell">Cellphone</option>
+                            <option value="home">Home</option>
+                            <option value="work">Work</option>
+                        </select>
+                    </label>
+            </fieldset>
+    
+            <!--Languages-->
+            <fieldset id="languages">
+                <legend class="fieldsetTitle">Written and Spoken Languages</legend>
+                <p>
+                    List the languages you have a good command of and specify, in parentheses, where it applies to the written or spoken language.
+                    You can also add any additional language you know and/or aren't perfectly fluent in, so long as it is pertinent and you at least know the basics.
+                    
+                    <br/><br/>Example:
+                    <ul>
+                        <li>English (spoken and written)</li>
+                        <li>French (spoken)</li>
+                        <li>Spanish (basic)</li>
+                    </ul>
+                        
+                    <input type="text" placeholder="Add a language...">
+            </fieldset>
+    
+            <!--Education-->
+            <fieldset id="education">
+                <legend class="fieldsetTitle">Education</legend>
+                <p>
+                    From most to least recent, list your educational background.
+                    <br/><br/>Format:
+                    <br/>&nbsp; &nbsp; School name/establishment &nbsp;&nbsp; | &nbsp;&nbsp; Program name &nbsp;&nbsp; | &nbsp;&nbsp; Start date &nbsp;&nbsp; | &nbsp;&nbsp; End date
+                    <br/><br/>Example:
+                    <br/>&nbsp; &nbsp; Best University &nbsp;&nbsp; | &nbsp;&nbsp; Software Engineering &nbsp;&nbsp; | &nbsp;&nbsp; 09-04-2018 &nbsp;&nbsp; | &nbsp;&nbsp; 05-25-2022
+                </p>
+    
+                <input type="text" placeholder="School name...."/>
+                <input type="text" placeholder="Program name..."/>
+                <input type="date"/>
+                <input type="date">
+
+                <!--Extracurriculars-->
+                <p>Enter any relevant extracurriculars here, from most to least recent.</p>
+                    <input type="text" placeholder="Activity name...."/>
+                    <input type="text" placeholder="Details..."/>
+                    <input type="date"/>
+                    <input type="date">
+            </fieldset>
+    
+            <!--Work experience-->
+            <fieldset id="workExp">
+                <legend class="fieldsetTitle">Work Experience</legend>
+                <p>
+                    From most to least recent, list your previous work experiences as well as a short description of what you have worked on.
+                    <br/><br/>Guidelines:
+                        <ul>
+                            <li>Make sure you use a recognizable title name like doctor, science teacher, data analyst, consultant, etc.</li>
+                            <li>List tasks and projects you have completed that are relevant to the position you are trying to apply for.</li>
+                            <li>Use the past tense while talking about the projects you have worked on.</li>
+                        </ul>
+                </p>
+                <p>
+                    Format:
+                    <br/>&nbsp;&nbsp; Company name &nbsp;&nbsp; | &nbsp;&nbsp; Position name &nbsp;&nbsp; | &nbsp;&nbsp; Start date &nbsp;&nbsp; | &nbsp;&nbsp; End date
+                        <br/>&emsp;&emsp;&emsp; A short list of tasks and projects you have completed and worked on
+                    <br/><br/>Example:
+                    <br/>&nbsp;&nbsp; Amazing Company &nbsp;&nbsp; | &nbsp;&nbsp; Graphic designer &nbsp;&nbsp; | &nbsp;&nbsp; Start date &nbsp;&nbsp; | &nbsp;&nbsp; End date
+                    &emsp;&emsp;&emsp;
+                        <ul>
+                            <li>Drafted concept art for CoolGame</li>
+                            <li>Worked on cover art for John Smith (Pearson)'s book</li>
+                        </ul>
+                </p>
+
+                <input type="text" placeholder="Company name..."/>
+                <input type="text" placeholder="Position title..."/>
+                <input type="date"/>
+                <input type="date"/>
+                    <br/>
+                <input type="text" placeholder="Accomplishments..."/>
+            </fieldset>
+        </div>
+            
+            <!--Submit and reset buttons-->
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Restart"/>
+        <footer>
+            <br/>
+            Project: CV Template Generator &nbsp;&nbsp; | &nbsp;&nbsp; Authors: Minh-Tam Do, Émilie Martin, Kevin Sidhu, Daniela Venuta
+            <br/>
+            Presented: November 17-18th, 2018 (Blochacks2018) &nbsp;&nbsp; | &nbsp;&nbsp; Revisited: February 23rd, 2019
+        </footer>
+    </body>
+</html>
