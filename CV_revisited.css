@@ -1,0 +1,60 @@
+/*Use of the Night Queen Color Palette. See https://www.color-hex.com/color-palette/73435 */
+
+#nameAndContact, #languages, #education, #workExp {
+    color:black;
+    border-color:#0892df;
+    background-color: #bad8eb;
+}
+
+.fieldsetTitle {
+    font-family:Georgia, serif;
+    font-size: 24px;
+}
+
+#navBar {
+    list-style-type: none;
+    color: white;
+    background-color:#131b2b;
+    padding: 15px 15px 15px 15px;
+
+}
+
+#navBar li {
+    display: inline;
+}
+
+#menu_fr {
+    float: right;
+}
+
+#navBar li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+}
+
+#navBar li a:hover {
+    background-color: #0892df;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+p {
+    size: 12px;
+}
+
+strong {
+    color: 	#0892df;
+}
+
+.example {
+    color: 	#0892df;
+}
+
+footer {
+    font-style: italic;
+    font-size: 12px;
+}
