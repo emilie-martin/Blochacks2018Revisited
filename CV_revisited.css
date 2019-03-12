@@ -1,4 +1,12 @@
-/*Use of the Night Queen Color Palette. See https://www.color-hex.com/color-palette/73435 */
+/*
+    Disclaimer:
+        Below is the CSS documentation of the BlocHacks2018 project reboot
+        The original was made by students Émilie Martin, Daniela Venuta, Minh-Tam Do, and Kevin Sidhu and can be viewed at the following location
+            github.com/daniela-venuta/blochacks2018
+    Last updated: March 12th, 2019
+    Note:
+        -Use of the Night Queen Color Palette. See https://www.color-hex.com/color-palette/73435    
+*/
 
 #nameAndContact, #languages, #education, #workExp {
     color:black;
@@ -16,14 +24,13 @@
     color: white;
     background-color:#131b2b;
     padding: 15px 15px 15px 15px;
-
 }
 
 #navBar li {
     display: inline;
 }
 
-#menu_fr {
+#menu_fr, #menu_en {
     float: right;
 }
 
