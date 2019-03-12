@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <!--
-        Revisited version of the CV Template Generator done for BlochacksF2018
+        Revisited version of the CV Template Generator done for Blochacks2018
         Original: github.com/daniela-venuta/blochacks2018
         
         Authors: Minh-Tam Do, Émilie Martin, Kevin Sidhu, Daniela Venuta
         Project: CV Template Generator
                 Goal: Facilitate the creation of a Curriculum Vitae (CV) for job applications.
-                    Targetted at the portion of the population less familiar with the process
+                    Targetted at the portion of the population less familiar with the process of employement in Canada
                             e.g.: students or immigrants
-        Last update: March 3rd 2019
-        Last modification: Made menu horizontal and added buttons
-            Notes:
+        Last update: March 12th 2019
+        Last modifications:
+            -Added meta tags to specify the document
+            -Linked JS document and FR version of website
+            -Added function names to the proper buttons
+            -Made skeleton document for JavaScript functions
+        Notes:
             -must fix placement of menu_fr
-            -use toggleable tabs for the menu
+            -look into toggleable tabs for the top menu bar
     -->
 
     <head>
         <meta charset="UTF-8">
+        <!--Define authors-->
+        <meta name="author" content="Minh-Tam Do, Émilie Martin, Kevin Sidhu, Daniela Venuta">
+        <!--Define keywords for easier web search-->
+        <meta name="keywords" content="CV Generator, ConUHacksIV, hackathon">
+        <!--Define description of web page-->
+        <meta name="description" content="CV Generator">
         <title>CV Generator</title>
         <!--Link to CSS doc-->
         <link rel="stylesheet" type="text/css" href="CV_revisited.css" />
+        <!--Allows the control of the viewport aka visual adjustments are made depending on the device used-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Import icons from Fontawesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!--Link to JS doc-->
+        <script type="text/javaScript" src="CV_revisited.js"></script>
     </head>
 
     <body>
@@ -32,7 +46,7 @@
                 <li><a id="menu_home">Home</a></li>
                 <li><a id="menu_use">Why use this?</a></li>
                 <li><a id="menu_about">About us</a></li>
-                <li><a id="menu_fr">FR</a></li>
+                <li><a id="menu_fr" href="CV_revisited_FR.html">FR</a></li>
             </ul>
         </header>
 
@@ -63,10 +77,10 @@
                         </select>
                     </label>
 
-                <button id="addNum">
+                <button id="addNum" onclick="addNum()">
                     <i class="fas fa-plus"></i>
                 </button>
-                <button id="removeNum">
+                <button id="removeNum" onclick="removeNum()">
                     <i class="fas fa-minus"></i>
                 </button>
             </fieldset>
@@ -90,10 +104,10 @@
                 </div>                        
                     <input type="text" placeholder="Add a language...">
 
-                <button id="addLang">
+                <button id="addLang" onclick="addLang()">
                     <i class="fas fa-plus"></i>
                 </button>
-                <button id="removeLang">
+                <button id="removeLang" onclick="removeLang()">
                     <i class="fas fa-minus"></i>
                 </button>
             </fieldset>
@@ -118,10 +132,10 @@
                 <input type="date"/>
                 <input type="date">
 
-                <button id="addSchool">
+                <button id="addSchool" onclick="addSchool()">
                     <i class="fas fa-plus"></i>
                 </button>
-                <button id="removeSchool">
+                <button id="removeSchool" onclick="removedSchool()">
                     <i class="fas fa-minus"></i>
                 </button>
 
@@ -131,10 +145,10 @@
                     <input type="text" placeholder="Details..."/>
                     <input type="date"/>
                     <input type="date">
-                <button id="addExtra">
+                <button id="addExtra" onclick="addExtra">
                     <i class="fas fa-plus"></i>
                 </button>
-                <button id="removeExtra">
+                <button id="removeExtra" onclick="removeExtra">
                     <i class="fas fa-minus"></i>
                 </button>
             </fieldset>
@@ -175,20 +189,20 @@
                 <input type="date"/>
                 <input type="date"/>
 
-                <button id="addWork">
+                <button id="addWork" onclick="addWork()">
                     <i class="fas fa-plus"></i>
                 </button>
-                <button id="removeWork">
+                <button id="removeWork" onclick="removeWork()">
                     <i class="fas fa-minus"></i>
                 </button>
 
                     <br/>
                 <input type="text" placeholder="Accomplishments..."/>
 
-                <button id="addAccomp">
+                <button id="addAccomp" onclick="addAccomp()">
                     <i class="fas fa-plus"></i>
                 </button>
-                <button id="removeAccomp">
+                <button id="removeAccomp" onclick="removeAccomp()">
                     <i class="fas fa-minus"></i>
                 </button>
             </fieldset>
@@ -199,9 +213,9 @@
             <input type="reset" value="Restart"/>
         <footer>
             <br/>
-            Project: CV Template Generator &nbsp;&nbsp; | &nbsp;&nbsp; Authors: Minh-Tam Do, Émilie Martin, Kevin Sidhu, Daniela Venuta
+            Project: CV Template Generator &nbsp;&nbsp; | &nbsp;&nbsp; Authors: Minh-Tam Do, Émilie Martin, Kevin Sidhu, Daniela Venuta &copy;
             <br/>
-            Presented: November 17-18th, 2018 (Blochacks2018) &nbsp;&nbsp; | &nbsp;&nbsp; Revisited: March 3rd, 2019
+            Presented: November 17-18th, 2018 (Blochacks2018) &nbsp;&nbsp; | &nbsp;&nbsp; Revisited: March 12th, 2019
         </footer>
     </body>
 </html>
