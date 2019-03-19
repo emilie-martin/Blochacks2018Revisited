@@ -11,6 +11,6 @@ The goal was to help facilite the creation of a CV, mostly for newly arriving im
 
 *   _Daniela Venuta_ | @daniela-venuta
 
-*   _Minh-Tam Do_
+*   _Minh-Tam Do_ | @mint47
 
 *   _Kevin Sidhu_
